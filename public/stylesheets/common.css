@@ -1,0 +1,31 @@
+.left { float:left !important; }
+.right { float:right !important; }
+
+.h-menu, .h-menu-inline, .v-menu, .pagination {
+	overflow:hidden; 
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.h-menu li, .pagination li {
+	float:left;
+	margin:0;
+}
+
+.h-menu-inline li { display:inline; }
+
+ul.v-menu li {
+	margin:0;
+}
+
+ul.v-menu ul { margin-left: 16px; margin-bottom:3px; }
+
+.pagination a, .pagination span {
+	padding: 2px 4px;
+}
+
+table.scaffold td {
+  padding:3px;
+}
+

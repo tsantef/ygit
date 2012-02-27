@@ -1,0 +1,28 @@
+<%= form_for(@sshkey, :html => { :class => "form-horizontal"}) do |f| %>
+  <fieldset>
+    <legend></legend>
+
+    <% if @sshkey.errors.any? %>
+      <div id="error_explanation" class="alert alert-block alert-error fade in">
+        <a class="close" data-dismiss="alert" href="#">×</a>
+        <h4 class="alert-heading"><%= pluralize(@sshkey.errors.count, "error") %> prohibited this sshkey from being saved:</h4>
+
+        <ul>
+        <% @sshkey.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <%= field_text(f, :name) %>
+    <%= field_text(f, :description) %>
+    <%= field_text_area(f, :key, :rows => 6) %>
+
+    <div class="form-actions">
+      <%= f.submit :class => "btn btn-primary" %>
+      <%= link_to 'Cancel', sshkeys_path, :class => "btn"  %> 
+    </div>
+
+  </fieldset>
+<% end %>

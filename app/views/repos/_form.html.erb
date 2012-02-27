@@ -1,0 +1,28 @@
+<%= form_for(@repo, :html => { :class => "form-horizontal"}) do |f| %> 
+  <fieldset>
+    <legend></legend>
+    
+    <% if @repo.errors.any? %>
+      <div id="error_explanation" class="alert alert-block alert-error fade in">
+        <a class="close" data-dismiss="alert" href="#">×</a>
+        <h4 class="alert-heading"><%= pluralize(@repo.errors.count, "error") %> prohibited this repo from being saved:</h4>
+        <ul>
+        <% @repo.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+      <%= field_text(f, :name, :help => "lower case with no spaces")  %>
+      <%= field_text_area(f, :description ) %>
+      <%= field_text(f, :url, :class => "input-xlarge") %>
+
+      <div class="form-actions">
+        <%= f.submit :class => "btn btn-primary" %>
+        <%= link_to 'Cancel', repos_path, :class => "btn"  %> 
+      </div>
+
+    </div>
+  </fieldset>
+<% end %>

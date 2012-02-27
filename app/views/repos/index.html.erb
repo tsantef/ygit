@@ -1,0 +1,27 @@
+<h1>Repositories</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @repos.each do |repo| %>
+    <tr>
+      <td>
+        <%= link_to repo.name, repo %>
+      </td>
+      <td>
+        <%= link_to 'Edit', edit_repo_path(repo), :class => "btn btn-mini" %>
+        <%= link_to 'Destroy', repo, :confirm => 'Are you sure?', :method => :delete, :class => "btn btn-mini btn-danger" %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<div class="form-actions">
+  <%= link_to 'New Repo', new_repo_path, :class => "btn btn-primary" %>
+</div>

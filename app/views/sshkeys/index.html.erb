@@ -1,0 +1,28 @@
+<h1>SSH Keys</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @sshkeys.each do |sshkey| %>
+    <tr>
+      <td><%= sshkey.name %></td>
+      <td><%= sshkey.description %></td>
+      <td>
+        <%= link_to 'Show', sshkey, :class => "btn btn-mini" %>
+        <%= link_to 'Edit', edit_sshkey_path(sshkey), :class => "btn btn-mini" %>
+        <%= link_to 'Destroy', sshkey, :confirm => 'Are you sure?', :method => :delete, :class => "btn btn-mini btn-danger" %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<div class="form-actions">
+  <%= link_to 'New SSH Key', new_sshkey_path, :class => "btn btn-primary"  %>
+</div>

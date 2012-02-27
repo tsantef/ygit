@@ -1,0 +1,25 @@
+<h2><%= @repo.name %></h2>
+
+<p>
+  <%= @repo.description %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= link_to @repo.url %>
+</p>
+
+<p>
+  <b>Repo</b>
+  <%= @repo.git_url %>
+</p>
+
+<p>
+<pre><%=@repo.get_files_raw%></pre>
+</p>
+
+<div class="form-actions">
+	<%= link_to 'Edit', edit_repo_path(@repo), :class => "btn" %>
+	<%= link_to 'Back', repos_path, :class => "btn"  %> 
+</div>
+

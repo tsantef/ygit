@@ -1,0 +1,142 @@
+/* RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, b,  big,  code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+	line-height: inherit;
+}
+html { overflow-y: scroll; }
+ul, ol { padding-left:2em; margin:18px 0; }
+ul ul, ol ol { margin:0; }
+body {	
+	color: #222;
+	background: white;	
+}
+table {	border-collapse:collapse;	border-spacing:0; }
+caption, th, td {	text-align: left;	vertical-align: top; }
+blockquote, q { quotes:"\201C" "\201D" "\2018" "\2019"; }
+blockquote:before {	content:""; }
+q:before { content:open-quote; }
+blockquote:after { content:""; }
+q:after { content:close-quote; }
+a { color:#0066CC; }
+blockquote { margin: 18px 4em  18px 3em; font-style:italic; }
+sub, sup { line-height:0;  }
+sub { vertical-align:baseline; }
+sup { vertical-align: super; }
+
+/*textarea, input[type=text] {
+	display: block;
+}*/
+
+/* TEXT */
+html {
+	font-size: 16px;
+	line-height: 18px;
+}
+body {
+	font-size:14px;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+caption, th {
+	font-weight:bold;
+}
+label { font-weight:bold; color:#333; }
+
+h1, h2, h3, h4, h5, h6 { font-weight:bold; line-height: 100%; }
+h1 { font-size: 25px/*1.786em*/; margin:18px 0; } /* 25px */
+h2 { font-size: 1.500em; margin:18px 0; } /* 21px */
+h3 { font-size: 1.286em; margin:18px 0; } /* 18px */
+h4 { font-size: 1.071em; margin:0 0; } /* 15px */
+h5 { font-size: 0.857em; margin:0 0;} /* 12px */
+h6 { font-size: 0.643em; margin:0 0; } /* 9px */
+
+abbr, acronym {	text-transform:uppercase; line-height:18px; }
+
+abbr[title], acronym[title], dfn[title]  {
+	border-bottom-style:dotted;
+	border-bottom-width:1px;
+	cursor: help;
+}
+
+em, cite, dfn, i { font-style:italic; }
+b, strong { font-weight:bold; }
+code, kbd, samp, pre, tt, var { font-family:mono-space,monospace; line-height:16px }
+small { line-height:16px }
+del { text-decoration:line-through; }
+mark { background-color:rgba(255, 255, 0, 0.4); color:#333333; padding:0 0.25em; }
+textarea, input { font-size:13px; }
+img { display: block; }
+
+/* STICKY FOOTER */
+
+html, body {
+	height: 100%;
+}
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto; 
+}
+
+/* FORMS */
+
+.field input[type=checkbox], .field input[type=radio] { margin:0px 3px 0px 0px; padding:0px; }
+
+.field  {
+	margin-bottom:12px;
+	overflow: hidden;
+	width:100%;	
+}
+
+.field label { 
+	font-size:13px;
+	width:162px;
+	display:block;
+	float:left;
+}
+
+.field input[type=text], .field textarea , .field input[type=password], .field select { 
+	padding:3px 2px; 
+	border-style:solid;
+	border-width: 1px;
+	border-color: #7C7C7C #C3C3C3 #DDDDDD #C3C3C3;
+	height:18px;
+	width:288px;	
+	float:left;
+}
+
+.field textarea  { height:72px; }
+
+.field select , .field input[type=submit] , .field input[type=reset] , .field button   { height:26px; }
+
+.field .help { font-size:11px; margin:0; } 
+
+.field-textbox div, .field-password div, .field-textarea div , .field-select div, .field-file div, .field-button div { margin-bottom:-8px; z-index:10000; }
+
+.half { width:50% }
+
+.half  label { float:none; }
+
+/* COMMON */
+
+p { margin:18px 0;}
+p img { margin:0 0 18px 18px }
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1 }
+

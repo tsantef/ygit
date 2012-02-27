@@ -1,0 +1,17 @@
+/* Layout  */
+.navbar a.logo {
+  padding:3px 9px 3px 3px;
+}
+
+.footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+/* Home Page  */
+

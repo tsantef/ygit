@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%= @sshkey.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @sshkey.description %>
+</p>
+
+<p>
+  <pre><%= @sshkey.key %></pre>
+</p>
+
+<div class="form-actions">
+  <%= link_to 'Edit', edit_sshkey_path(@sshkey), :class => "btn" %>
+  <%= link_to 'Back', sshkeys_path, :class => "btn"  %> 
+</div>
