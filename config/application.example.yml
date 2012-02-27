@@ -1,5 +1,5 @@
 development:
-  app_title: "yGit"
+  app_title: "yGit:Dev"
   repo_path: "repos"
   repo_host: "repos"
   authorized_keys_path: "repos"
