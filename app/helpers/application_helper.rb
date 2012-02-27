@@ -34,11 +34,5 @@ module ApplicationHelper
        
     crumbs.join(" &raquo; ")
   end
-
-  def release_date
-    Time.at(IO.read("#{Rails.root}/current.rev").to_i)
-  rescue
-    1
-  end
   
 end
