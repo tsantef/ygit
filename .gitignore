@@ -7,3 +7,5 @@ Tossfile.rb
 /lib/templates
 config/application.yml
 /repos/
+vendor/bundle
+vendor/cache
